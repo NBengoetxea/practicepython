@@ -1,0 +1,17 @@
+#Take a list, say for example this one:
+#a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+#and write a program that prints out all the elements of the list that are less than 5.
+#Instead of printing the elements one by one, make a new list that has all the elements less than 5 from this list in it and print out this new list.
+
+#Create the list
+a=[1,1,2,3,5,8,13,21,34,55,89]
+#Create the new empty list where I will add the numbers under the condition >5
+b=[]
+
+
+for x in a: #Loop to analyze every number of the list
+    if x < 5: #if they are under the condition
+       b.append(x) #add to the new list
+    else: 
+        break #sino parar
+print(b) #imprimir la nueval ista
