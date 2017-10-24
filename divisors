@@ -1,0 +1,14 @@
+#exercise from http://www.practicepython.org/exercise/2014/02/26/04-divisors.html
+
+print("tell me a number")
+
+y = int(input())
+x = range(y,0,-1)
+a=[]
+
+
+for i in x:
+  if y % i == 0:
+    a.append(i)
+print("your number is divisible by " +str(a))  
+    
