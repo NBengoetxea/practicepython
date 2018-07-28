@@ -1,0 +1,14 @@
+#Este ejercicio viene de Automate the boring stuffing https://automatetheboringstuff.com/chapter3/
+#Está probado y funciona sin problema
+
+def collatz(number): #definición de la función collatz
+     while number != 1: #mientras el número no sea 1
+        if number % 2 == 0:#si es par
+           number = number // 2 #dividirlo por dos
+           print(number) #mostrar número
+        else: #si es impar
+            number = 3*number+1 #fórmula 3*número+1
+            print(number) #imprimir nuevo número
+print("tell me a number, no matter if it's odd or even")
+number = int(input())
+collatz(number)
