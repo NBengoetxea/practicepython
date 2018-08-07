@@ -1,0 +1,13 @@
+#Python's exercises #1 from http://www.mclibre.org/consultar/python/ejercicios/ej-listas-1.html
+print('Dígame cuántas palabras tiene la lista')
+numNames = input()
+
+listNames =[]
+if int(numNames) > 0:
+    for i in range(int(numNames)):
+        print('Dígame la palabra ' + str(i+1) +':')
+        listNames.append(input())
+        print('La lista creada es: ' +str(listNames))
+else:
+    print('¡Imposible!')
+    
